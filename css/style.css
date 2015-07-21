@@ -1,0 +1,16 @@
+#home{
+    margin-top: -40px;
+    background: url("../img/cd-background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+#researchBigPicture{
+    background: url("../img/TRAJETS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+#research{
+    background: white;
+}
