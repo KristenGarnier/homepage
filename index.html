@@ -9,64 +9,79 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-default">
-
+    <
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#">
                     <img alt="Brand" src="img/logo1.png">
                 </a>
             </div>
-            <div class="navbar-right">
-                <ul class="nav navbar-nav">
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Accueil</a></li>
                     <li><a href="#">Proposer</a></li>
                     <li><a href="#">Rechercher</a></li>
-
+                    <li>
+                        <button type="button" class="btn btn-default navbar-btn"><span>Connexion</span></button>
+                    </li>
                 </ul>
-                <button type="button" class="btn btn-default navbar-btn">Sign in</button>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
     </nav>
 </header>
 <div class="page">
-    <div id="home" height="500px">
-        <img src="img/Logostart.png" alt="Logo MVB"/>
+    <div id="home" class="fillScreen">
+        <img src="img/Logostart.png" class="center-block" alt="Logo MVB"/>
     </div>
     <div id="research">
-        <h1 class="text-center">Rechercher</h1>
+        <div class="container">
+            <h1 class="text-center"><span>Rechercher</span></h1>
 
-        <form class="form-inline">
-            <div class="row">
-                <div class="form-group col-md-4">
-                    <select id="depart" class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
+            <form>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <select id="depart" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <select id="finish" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <select id="date" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-group col-md-4">
-                    <select id="finish" class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-4">
-                    <select id="date" class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
     <div id="researchBigPicture" style="height: 500px">
         <img src="img/Filtre.png" alt="REcherche ajava"/>
@@ -178,6 +193,8 @@
 
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/mvb.js"></script>
+<script src="js/resizeVp.js"></script>
 </body>
 </html>

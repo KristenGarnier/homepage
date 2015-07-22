@@ -1,16 +1,132 @@
-#home{
-    margin-top: -40px;
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../font/BebasNeue.otf") format("opentype");
+  src: local("BebasNeue"); }
+body {
+  /*/////////////HEADER\\\\\\\\*/
+  /*/////////////HOME \\\\\\\\*/
+  /*////////////REASEARCHBIGPICTURE \\\\\\\\*/
+  /*////////////REASEARCH \\\\\\\\*/ }
+  body header {
+    font-family: "BebasNeue";
+    text-transform: uppercase;
+    font-size: 1.3em; }
+    body header nav {
+      background-color: white !important;
+      border-color: white !important;
+      background-color: white;
+      height: 75px; }
+      body header nav img {
+        vertical-align: middle;
+        margin-left: 5rem; }
+      body header nav .navbar-toggle {
+        border: none;
+        background: transparent;
+        margin-top: 2rem; }
+        body header nav .navbar-toggle span {
+          background: black !important;
+          transition: all ease-in-out 0.2s; }
+        body header nav .navbar-toggle span:nth-child(2) {
+          transform: translateY(-140px); }
+        body header nav .navbar-toggle span:nth-child(3) {
+          transform: rotate(45deg) translateX(-3px); }
+        body header nav .navbar-toggle span:nth-child(4) {
+          transform: rotate(-45deg) translateY(-7px) translateX(3px); }
+        body header nav .navbar-toggle.collapsed {
+          background: transparent; }
+          body header nav .navbar-toggle.collapsed span:nth-child(2) {
+            transform: translateY(0px); }
+          body header nav .navbar-toggle.collapsed span:nth-child(3) {
+            transform: rotate(0deg) translateX(0px); }
+          body header nav .navbar-toggle.collapsed span:nth-child(4) {
+            transform: rotate(0deg) translateY(0px) translateX(0px); }
+        body header nav .navbar-toggle:hover {
+          background: transparent !important; }
+        body header nav .navbar-toggle:focus {
+          background: transparent !important; }
+      @media screen and (max-width: 764px) {
+        body header nav .navbar-collapse {
+          margin-top: 1.5rem;
+          background-color: white;
+          border-color: white !important; } }
+      body header nav .navbar-right {
+        margin-top: 1.5rem; }
+        body header nav .navbar-right li {
+          text-align: center;
+          margin-right: 5rem; }
+          @media screen and (max-width: 1040px) {
+            body header nav .navbar-right li {
+              margin-right: 2rem; } }
+          @media screen and (max-width: 764px) {
+            body header nav .navbar-right li {
+              margin-right: 0;
+              margin-top: 2rem; } }
+          body header nav .navbar-right li:last-child {
+            margin-left: 12em; }
+            @media screen and (max-width: 1040px) {
+              body header nav .navbar-right li:last-child {
+                margin-left: 4rem; } }
+            @media screen and (max-width: 764px) {
+              body header nav .navbar-right li:last-child {
+                margin-left: 0rem;
+                margin-top: 2rem; } }
+          body header nav .navbar-right li:nth-child(3) {
+            margin-right: 0; }
+          body header nav .navbar-right li a {
+            color: black !important; }
+          body header nav .navbar-right li button {
+            color: white;
+            margin-top: 0.4rem;
+            font-size: 1em;
+            border: none;
+            border-radius: 0;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            background-color: #337ab7;
+            transition: all ease-in-out 0.2s; }
+            body header nav .navbar-right li button:hover {
+              color: white;
+              background-color: #285f8f; }
+  body #home {
     background: url("../img/cd-background-1.jpg");
     background-repeat: no-repeat;
-    background-size: cover ;
-}
-
-#researchBigPicture{
+    background-size: cover; }
+    body #home img {
+      padding-top: 20rem;
+      width: 18%;
+      min-width: 300px; }
+  body #researchBigPicture {
     background: url("../img/TRAJETS.jpg");
     background-repeat: no-repeat;
-    background-size: cover ;
-}
-
-#research{
+    background-size: cover; }
+  body #research {
     background: white;
-}
+    font-family: BebasNeue;
+    padding: 4rem 0 6rem 0; }
+    body #research h1 {
+      padding-bottom: 4rem; }
+      body #research h1 span {
+        color: black;
+        padding: 1rem 3rem 0.5rem 3rem;
+        border: solid black 4px; }
+    body #research select.form-control {
+      color: black;
+      margin-top: 30px;
+      width: 100%;
+      outline: none;
+      height: 40px;
+      border-bottom: solid 5 px black;
+      font-family: "bebas" !important;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background: transparent;
+      text-align: center !important;
+      font-size: 26px;
+      line-height: 1;
+      border: 0;
+      border-radius: 0;
+      height: 34px;
+      -webkit-appearance: none;
+      border-bottom: solid 5px; }
+
+/*# sourceMappingURL=style.css.map */
