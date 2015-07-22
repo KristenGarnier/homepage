@@ -6,7 +6,13 @@ body {
   /*/////////////HEADER\\\\\\\\*/
   /*/////////////HOME \\\\\\\\*/
   /*////////////REASEARCHBIGPICTURE \\\\\\\\*/
-  /*////////////REASEARCH \\\\\\\\*/ }
+  /*////////////REASEARCH \\\\\\\\*/
+  /*////////////RESUME\\\\\\\\*/
+  /*/////////VIDEO\\\\\*/
+  /*/////////DECOUVRIR\\\\\*/
+  /*/////////APP\\\\\*/
+  /*/////////LEPROJET\\\\\*/
+  /*/////////FOOTER\\\\\*/ }
   body header {
     font-family: "BebasNeue";
     text-transform: uppercase;
@@ -99,6 +105,9 @@ body {
     background: url("../img/TRAJETS.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
+    body #researchBigPicture img {
+      padding-top: 20rem;
+      min-width: 300px; }
   body #research {
     background: white;
     font-family: BebasNeue;
@@ -128,5 +137,36 @@ body {
       height: 34px;
       -webkit-appearance: none;
       border-bottom: solid 5px; }
+  body #resume {
+    background: white;
+    padding: 10rem 0 10rem 0; }
+    body #resume .alinea {
+      margin-left: 5rem; }
+    body #resume .strong {
+      font-weight: 700; }
+  body #video video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; }
+  body #video img {
+    padding-top: 25rem;
+    min-width: 300px; }
+  body #decouvrir {
+    background: white; }
+  body #app {
+    background: white; }
+  body #projet {
+    background: white; }
+  body #footer {
+    background: white; }
 
 /*# sourceMappingURL=style.css.map */
