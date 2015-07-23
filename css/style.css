@@ -12,7 +12,10 @@ body {
   /*/////////DECOUVRIR\\\\\*/
   /*/////////APP\\\\\*/
   /*/////////LEPROJET\\\\\*/
-  /*/////////FOOTER\\\\\*/ }
+  /*/////////FOOTER\\\\\*/
+  /*/////////PICTOS\\\\\*/ }
+  body .page {
+    overflow: hidden; }
   body header {
     font-family: "BebasNeue";
     text-transform: uppercase;
@@ -168,5 +171,15 @@ body {
     background: white; }
   body #footer {
     background: white; }
+    body #footer #partenaires h3 {
+      margin-top: 4rem;
+      margin-bottom: 4rem; }
+    body #footer #partenaires img {
+      max-width: 150px; }
+  body #pictos {
+    background: white;
+    padding: 10rem 0 10rem 0; }
+    body #pictos img {
+      width: 50%; }
 
 /*# sourceMappingURL=style.css.map */

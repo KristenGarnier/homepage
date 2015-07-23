@@ -7,6 +7,10 @@ $blue: #337ab7;
 }
 
 body {
+
+  .page{
+    overflow: hidden;
+  }
   /*/////////////HEADER\\\\\\\\\\\\\\\*/
 
   header {
@@ -252,5 +256,25 @@ body {
   /*/////////FOOTER\\\\\\\\\\*/
   #footer{
     background: white;
+    #partenaires{
+
+      h3{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+      img{
+        max-width: 150px;
+      }
+    }
+  }
+
+  /*/////////PICTOS\\\\\\\\\\*/
+  #pictos{
+    background: white;
+    padding: 10rem 0 10rem 0;
+
+    img{
+      width: 50%;
+    }
   }
 }

@@ -9,7 +9,6 @@
 </head>
 <body>
 <header>
-    <
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,7 +43,7 @@
 </header>
 <div class="page">
     <div id="home" class="fillScreen">
-        <img src="img/Logostart.png" class="center-block" alt="Logo MVB"/>
+        <img src="img/Logostart.png" class="center-block" alt="Logo MVB" data-parallax='{"y": 180, "to-scroll":300}'/>
     </div>
     <div id="research">
         <div class="container">
@@ -84,25 +83,26 @@
         </div>
     </div>
     <div id="researchBigPicture" class="fillScreen">
-        <img src="img/Filtre.png" class="center-block" alt="REcherche ajava"/>
+        <img src="img/Filtre.png" class="center-block" alt="REcherche ajava"
+             data-parallax='{"y": 150, "from-scroll": 550}'/>
     </div>
     <div id="resume">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <h3>En tout c'est, </h3>
 
                     <h3 class="strong alinea">550 Expériences partagées </h3>
 
                     <h3 class="strong alinea">31232 Covoitureurs</h3>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="pull-right">
-                    <h3>Aujourd'hui, </h3>
+                        <h3>Aujourd'hui, </h3>
 
-                    <h3 class="strong alinea">40 Trajets proposés </h3>
+                        <h3 class="strong alinea">40 Trajets proposés </h3>
 
-                    <h3 class="strong alinea">3 Destinations</h3>
+                        <h3 class="strong alinea">3 Destinations</h3>
                     </div>
                 </div>
             </div>
@@ -115,21 +115,28 @@
         <img src="img/BDMV.png" class="center-block" alt="Bienvenue dans ma voiture"/>
     </div>
     <div id="pictos">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="" alt=""/>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="center-block" src="img/earth.png" alt=""/>
 
-                <h3></h3>
-            </div>
-            <div class="col-md-4">
-                <img src="" alt=""/>
+                    <h3 class="text-center text-uppercase">Partager</h3>
+                </div>
+                <div class="col-md-3">
+                    <img class="center-block" src="img/earth.png" alt=""/>
 
-                <h3></h3>
-            </div>
-            <div class="col-md-4">
-                <img src="" alt=""/>
+                    <h3 class="text-center text-uppercase">Proteger</h3>
+                </div>
+                <div class="col-md-3">
+                    <img class="center-block" src="img/earth.png" alt=""/>
 
-                <h3></h3>
+                    <h3 class="text-center text-uppercase">Economiser</h3>
+                </div>
+                <div class="col-md-3">
+                    <img class="center-block" src="img/earth.png" alt=""/>
+
+                    <h3 class="text-center text-uppercase">gagner</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -175,22 +182,22 @@
             <div class="row">
                 <div class="col-md-3">
                     <a href="">
-                        <img src="img/atmb.png" alt="logo atmb"/>
+                        <img class="center-block" src="img/atmb.png" alt="logo atmb"/>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="">
-                        <img src="" alt="Logo radio mont blanc"/>
+                        <img class="center-block" src="img/logo3.png" alt="Logo radio mont blanc"/>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="">
-                        <img src="img/photographe.png" alt="logo photographe"/>
+                        <img class="center-block" src="img/photographe.png" alt="logo photographe"/>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="">
-                        <img src="img/out.png" alt="logo out door sport valley"/>
+                        <img class="center-block" src="img/out.png" alt="logo out door sport valley"/>
                     </a>
                 </div>
             </div>
@@ -203,5 +210,7 @@
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/mvb.js"></script>
 <script src="js/resizeVp.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.parallax-scroll.js"></script>
 </body>
 </html>
