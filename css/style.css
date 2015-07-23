@@ -161,6 +161,8 @@ body {
     background: url(polina.jpg) no-repeat;
     background-size: cover; }
   body #video img {
+    width: 30%;
+    min-width: 300px;
     padding-top: 25rem;
     min-width: 300px; }
   body #decouvrir {
