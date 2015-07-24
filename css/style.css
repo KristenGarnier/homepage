@@ -168,7 +168,7 @@ body {
   body #decouvrir {
     height: 700px;
     background-image: url("../img/Offre-ATMB.png");
-    background-position: bottom;
+    background-position: bottom left;
     background-size: cover;
     background-repeat: no-repeat; }
     body #decouvrir img {
@@ -183,7 +183,17 @@ body {
         -webkit-animation: blueCar 10s infinite ease-out;
         animation: blueCar 10s infinite ease-out; }
     body #decouvrir button {
-      margin-top: 350px; }
+      margin-top: 350px;
+      font-family: BebasNeue;
+      font-size: 2em;
+      padding: 1rem 3rem;
+      color: white !important;
+      border: white 4px solid !important;
+      transition: color ease-in-out 0.2s; }
+      body #decouvrir button:hover {
+        color: #b2e2f9 !important; }
+      body #decouvrir button::before {
+        background: white !important; }
   body #app {
     background: white; }
   body #projet {
