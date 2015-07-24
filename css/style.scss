@@ -327,6 +327,12 @@ body {
       position: relative;
       transform:   skewY(-15deg) translate(-50px, -100px) ;
     }
+    #appView{
+      @media screen and (max-width: 551px) {
+        margin-left: -20rem;
+      }
+    }
+
     a {
 
       margin-top: 2rem;
@@ -408,7 +414,7 @@ body {
         margin-bottom: 4rem;
       }
       img {
-        max-height: 90px;
+        max-height: 50px;
         @media screen and (max-height: 991px) {
           margin-top: 4rem;
         }

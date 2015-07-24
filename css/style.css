@@ -229,6 +229,9 @@ body {
       color: white !important;
       position: relative;
       transform: skewY(-15deg) translate(-50px, -100px); }
+    @media screen and (max-width: 551px) {
+      body #app #appView {
+        margin-left: -20rem; } }
     body #app a {
       margin-top: 2rem;
       display: block; }
@@ -278,7 +281,7 @@ body {
         margin-top: 4rem;
         margin-bottom: 4rem; }
       body #footer #partenaires img {
-        max-height: 90px; }
+        max-height: 50px; }
         @media screen and (max-height: 991px) {
           body #footer #partenaires img {
             margin-top: 4rem; } }
