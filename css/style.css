@@ -1,7 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 @font-face {
   font-family: "BebasNeue";
   src: url("../font/BebasNeue.otf") format("opentype");
   src: local("BebasNeue"); }
+@font-face {
+  font-family: "SignPainter";
+  src: url("../font/SignPainter.otf") format("opentype");
+  src: local("SignPainter"); }
+.fancyButton {
+  font-family: BebasNeue;
+  font-size: 2em;
+  color: white !important;
+  border: white 4px solid !important;
+  transition: color ease-in-out 0.2s; }
+  .fancyButton::before {
+    background: white !important; }
+
+@media screen and (max-width: 991px) {
+  .margin-left-xs {
+    margin-left: 30rem; } }
+@media screen and (max-width: 771px) {
+  .margin-left-xs {
+    margin-left: 20rem; } }
+@media screen and (max-width: 551px) {
+  .margin-left-xs {
+    margin-left: 10rem; } }
+
+.noUnderline:hover {
+  text-decoration: none; }
+
+.roboto {
+  font-family: roboto;
+  font-size: 2rem; }
+
 body {
   /*/////////////HEADER\\\\\\\\*/
   /*/////////////HOME \\\\\\\\*/
@@ -65,7 +96,7 @@ body {
           margin-right: 5rem; }
           @media screen and (max-width: 1040px) {
             body header nav .navbar-right li {
-              margin-right: 2rem; } }
+              margin-right: 1.5rem; } }
           @media screen and (max-width: 764px) {
             body header nav .navbar-right li {
               margin-right: 0;
@@ -74,7 +105,7 @@ body {
             margin-left: 12em; }
             @media screen and (max-width: 1040px) {
               body header nav .navbar-right li:last-child {
-                margin-left: 4rem; } }
+                margin-left: 2rem; } }
             @media screen and (max-width: 764px) {
               body header nav .navbar-right li:last-child {
                 margin-left: 0rem;
@@ -184,27 +215,73 @@ body {
         animation: blueCar 10s infinite ease-out; }
     body #decouvrir button {
       margin-top: 350px;
-      font-family: BebasNeue;
-      font-size: 2em;
-      padding: 1rem 3rem;
-      color: white !important;
-      border: white 4px solid !important;
-      transition: color ease-in-out 0.2s; }
+      padding: 1rem 3rem; }
       body #decouvrir button:hover {
         color: #b2e2f9 !important; }
-      body #decouvrir button::before {
-        background: white !important; }
   body #app {
-    background: white; }
+    padding: 15rem 0rem;
+    background: url("../img/BUCHECROISE.png") bottom left;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body #app h3 {
+      font-family: SignPainter;
+      font-size: 6rem;
+      color: white !important;
+      position: relative;
+      transform: skewY(-15deg) translate(-50px, -100px); }
+    body #app a {
+      margin-top: 2rem;
+      display: block; }
+      body #app a button {
+        border: white solid 2px;
+        padding: 1rem 3rem;
+        border-radius: 10px;
+        color: white !important;
+        background: transparent !important; }
+        body #app a button img {
+          margin-top: 0.5rem;
+          max-width: 36px; }
   body #projet {
+    background: url("../img/LEPROJET.jpg") center top !important;
+    height: 700px;
     background: white; }
+    body #projet button {
+      transform: translateY(320px);
+      padding: 1rem 3rem; }
+      body #projet button:hover {
+        color: #3a3a3a !important; }
   body #footer {
     background: white; }
-    body #footer #partenaires h3 {
-      margin-top: 4rem;
-      margin-bottom: 4rem; }
-    body #footer #partenaires img {
-      max-width: 150px; }
+    body #footer #links {
+      padding: 5rem 0;
+      background: #292c2f; }
+      @media screen and (max-width: 991px) {
+        body #footer #links div {
+          margin-top: 3rem; }
+          body #footer #links div p {
+            margin-top: 5rem;
+            width: 100%; } }
+      body #footer #links p {
+        color: #999999;
+        width: 70%; }
+      body #footer #links a {
+        font-family: BebasNeue;
+        font-size: 1.5em;
+        color: #999999;
+        transition: color 0.2s ease-out; }
+        body #footer #links a:hover {
+          text-decoration: none;
+          color: #666666; }
+    body #footer #partenaires {
+      padding-bottom: 10rem; }
+      body #footer #partenaires h3 {
+        margin-top: 4rem;
+        margin-bottom: 4rem; }
+      body #footer #partenaires img {
+        max-height: 90px; }
+        @media screen and (max-height: 991px) {
+          body #footer #partenaires img {
+            margin-top: 4rem; } }
   body #pictos {
     background: white;
     padding: 10rem 0 10rem 0; }

@@ -1,9 +1,51 @@
 $blue: #337ab7;
 
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 @font-face {
   font-family: "BebasNeue";
   src: url('../font/BebasNeue.otf') format('opentype');
   src: local('BebasNeue');
+}
+
+@font-face {
+  font-family: "SignPainter";
+  src: url('../font/SignPainter.otf') format('opentype');
+  src: local('SignPainter');
+}
+
+.fancyButton {
+  font-family: BebasNeue;
+  font-size: 2em;
+  color: white !important;
+
+  border: white 4px solid !important;
+
+  transition: color ease-in-out 0.2s;
+
+  &::before {
+    background: white !important;
+  }
+}
+.margin-left-xs{
+  @media screen and (max-width: 991px){
+    margin-left: 30rem;
+  }
+  @media screen and (max-width: 771px){
+    margin-left: 20rem;
+  }
+  @media screen and (max-width: 551px){
+    margin-left: 10rem;
+  }
+}
+
+.noUnderline:hover {
+  text-decoration: none;
+}
+
+.roboto {
+  font-family: roboto;
+  font-size: 2rem;
 }
 
 body {
@@ -87,7 +129,7 @@ body {
           margin-right: 5rem;
 
           @media screen and (max-width: 1040px) {
-            margin-right: 2rem;
+            margin-right: 1.5rem;
           }
           @media screen and (max-width: 764px) {
             margin-right: 0;
@@ -97,7 +139,7 @@ body {
           &:last-child {
             margin-left: 12em;
             @media screen and (max-width: 1040px) {
-              margin-left: 4rem;
+              margin-left: 2rem;
             }
             @media screen and (max-width: 764px) {
               margin-left: 0rem;
@@ -265,46 +307,111 @@ body {
 
     button {
       margin-top: 350px;
-      font-family: BebasNeue;
-      font-size: 2em;
       padding: 1rem 3rem;
-      color: white!important;
-
-      border: white 4px solid !important;
-
-      transition: color ease-in-out 0.2s;
-
-      &:hover{
-        color: #b2e2f9!important;
-      }
-
-      &::before{
-        background: white!important;
+      &:hover {
+        color: #b2e2f9 !important;
       }
     }
   }
 
   /*/////////APP\\\\\\\\\\*/
   #app {
-    background: white;
+    padding: 15rem 0rem;
+    background: url('../img/BUCHECROISE.png') bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h3{
+      font-family: SignPainter;
+      font-size: 6rem;
+      color: white !important;
+      position: relative;
+      transform:   skewY(-15deg) translate(-50px, -100px) ;
+    }
+    a {
+
+      margin-top: 2rem;
+      display: block;
+
+      button {
+        border: white solid 2px;
+        padding: 1rem 3rem;
+
+        border-radius: 10px;
+
+        color: white !important;
+
+        background: transparent !important;
+        img {
+          margin-top: 0.5rem;
+          max-width: 36px;
+        }
+      }
+    }
   }
 
   /*/////////LEPROJET\\\\\\\\\\*/
   #projet {
+    background: url("../img/LEPROJET.jpg") center top !important;
+    height: 700px;
     background: white;
+    button {
+      transform: translateY(320px);
+      padding: 1rem 3rem;
+      &:hover {
+        color: #3a3a3a !important;
+      }
+    }
   }
 
   /*/////////FOOTER\\\\\\\\\\*/
   #footer {
     background: white;
+    #links {
+
+      padding: 5rem 0;
+
+      background: #292c2f;
+      div {
+        @media screen and (max-width: 991px) {
+          margin-top: 3rem;
+          p {
+            margin-top: 5rem;
+            width: 100%;
+          }
+        }
+      }
+
+      p {
+        color: #999999;
+        width: 70%;
+      }
+
+      a {
+        font-family: BebasNeue;
+        font-size: 1.5em;
+        color: #999999;
+        transition: color 0.2s ease-out;
+
+        &:hover {
+          text-decoration: none;
+          color: darken(#999999, 20);
+        }
+      }
+
+    }
     #partenaires {
+
+      padding-bottom: 10rem;
 
       h3 {
         margin-top: 4rem;
         margin-bottom: 4rem;
       }
       img {
-        max-width: 150px;
+        max-height: 90px;
+        @media screen and (max-height: 991px) {
+          margin-top: 4rem;
+        }
       }
     }
   }
@@ -326,19 +433,37 @@ body {
 }
 
 @keyframes blueCar {
-  0%   {left: -200px;}
-  100%   {left: 2000px;}
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 2000px;
+  }
 }
+
 @-webkit-keyframes blueCar {
-  0%   {left: -200px;}
-  100%   {left: 2000px;}
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 2000px;
+  }
 }
 
 @keyframes redCar {
-  0%   {right: -100px;}
-  100%   {right: 2000px;}
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 2000px;
+  }
 }
+
 @-webkit-keyframes redCar {
-  0%   {right: -100px;}
-  100%   {right: 2000px;}
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 2000px;
+  }
 }

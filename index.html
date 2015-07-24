@@ -144,64 +144,99 @@
     <div id="decouvrir">
         <img src="img/Voiture-Bleu.png" id="bleue" alt="voiture bleue"/>
         <img src="img/Voiture-rouge.png" id="rouge" alt="voiture rouge"/>
-        <button class="center-block button button--wayra text-uppercase">Découvrir</button>
+        <a href="#" class="noUnderline">
+            <button class="center-block button button--wayra text-uppercase fancyButton">Découvrir</button>
+        </a>
     </div>
     <div id="app">
         <div class="row">
             <div class="col-md-6">
-                <img src="" alt=""/>
+                <img src="img/app.png" alt="app convoit" data-parallax='{"x": 120, "to-scroll":6000}'/>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 margin-left-xs">
                 <h3>Bientôt</h3>
-                <button> Disponible sur google play</button>
-                <button> Disponible sur l'app store</button>
+                <a href="" class="noUnderline">
+                    <button >
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="img/googleplay.png"
+                                     alt="android"/>
+                            </div>
+                            <div class="col-xs-9">
+                                <span class="text-uppercase">Disponible sur </span>
+                                <br/> <span class="roboto text-uppercase">google play</span>
+                            </div>
+
+                        </div>
+                    </button>
+                </a>
+                <a href="">
+                    <button style="padding-right: 4.3rem">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img style="" src="img/apple.png"
+                                     alt="iphone"/>
+                            </div>
+                            <div class="col-xs-9">
+                                <span class="text-uppercase">Disponible sur </span>
+                                <br/> <span class="roboto text-uppercase">l'app store</span>
+                            </div>
+
+                        </div>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
     <div id="projet">
-        <button>Le projet</button>
+        <a href="#" class="noUnderline">
+            <button class="center-block button button--wayra text-uppercase fancyButton">Le projet</button>
+        </a>
     </div>
     <div id="footer">
         <div id="links">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="" alt=""/>
-                    <h4></h4>
+                    <img class="center-block" src="img/logo%20(1).png" alt="Logo ajava"/>
+                    <img class="center-block" src="img/copyright.png" alt="copyright"/>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="#">Trajet professionnel ?</a><br/><br/>
+                    <a href="#">Mention Légales</a><br/><br/>
+                    <a href="#">Asso.ajava@gmail.com</a>
                 </div>
                 <div class="col-md-4">
-                    <a href="">Trajet professionnel ?</a>
-                    <a href="">Mention Légales</a>
-                    <a href="">Asso.ajava@gmail.com</a>
-                </div>
-                <div class="col-md-4">
-                    <p>AJAVA Association des Jeunes Actifs de la Vallée de l'Arve. Association de loi 1901. Enregistrée
+                    <p class="text-center">AJAVA Association des Jeunes Actifs de la Vallée de l'Arve. Association de
+                        loi 1901. Enregistrée
                         par la préfecture du Rhône au numéro W691087405.</p>
                 </div>
             </div>
         </div>
         <div id="partenaires">
-            <h3>Nos partenaires</h3>
+            <div class="container">
+                <h3>Nos partenaires</h3>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="">
-                        <img class="center-block" src="img/atmb.png" alt="logo atmb"/>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="">
-                        <img class="center-block" src="img/logo3.png" alt="Logo radio mont blanc"/>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="">
-                        <img class="center-block" src="img/photographe.png" alt="logo photographe"/>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="">
-                        <img class="center-block" src="img/out.png" alt="logo out door sport valley"/>
-                    </a>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="center-block" src="img/atmb.png" alt="logo atmb"/>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="center-block" src="img/logo3.png" alt="Logo radio mont blanc"/>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="center-block" src="img/photographe.png" alt="logo photographe"/>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="center-block" src="img/out.png" alt="logo out door sport valley"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,7 +254,7 @@
 
     placeCar();
 
-    $(window).resize(function(){
+    $(window).resize(function () {
         placeCar();
     });
     function placeCar() {
@@ -230,14 +265,14 @@
 
         var width = $(window).width();
 
-        if (width < 1500){
+        if (width < 1500) {
             heightBlue = 550;
             heightRed = 600;
 
         }
 
-        $rouge.css("transform","translate3d("+ (width - 200)+"px, " + (heightRed) +"px, 0px)");
-        $bleue.css("transform","translate3d(0px, " + (heightBlue) +"px, 0px)");
+        $rouge.css("transform", "translate3d(" + (width - 200) + "px, " + (heightRed) + "px, 0px)");
+        $bleue.css("transform", "translate3d(0px, " + (heightBlue) + "px, 0px)");
     }
 
 </script>
