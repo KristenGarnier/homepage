@@ -8,7 +8,7 @@ $blue: #337ab7;
 
 body {
 
-  .page{
+  .page {
     overflow: hidden;
   }
   /*/////////////HEADER\\\\\\\\\\\\\\\*/
@@ -169,8 +169,8 @@ body {
 
     padding: 4rem 0 6rem 0;
 
-    h1{
-      span{
+    h1 {
+      span {
         color: black;
         padding: 1rem 3rem 0.5rem 3rem;
         border: solid black 4px;
@@ -178,13 +178,13 @@ body {
       padding-bottom: 4rem;
     }
 
-    select.form-control{
+    select.form-control {
       color: black;
       margin-top: 30px;
       width: 100%;
       outline: none;
       height: 40px;
-      border-bottom: solid 5 px black;
+      border-bottom: solid 5px black;
       font-family: "bebas" !important;
       -webkit-box-shadow: none;
       box-shadow: none;
@@ -201,22 +201,21 @@ body {
   }
 
   /*////////////RESUME\\\\\\\\\\\\\\\\*/
-  #resume{
+  #resume {
     background: white;
 
     padding: 10rem 0 10rem 0;
-    .alinea{
+    .alinea {
       margin-left: 5rem;
     }
 
-    .strong{
+    .strong {
       font-weight: 700;
     }
   }
 
-
   /*/////////VIDEO\\\\\\\\\\*/
-  #video{
+  #video {
     video#bgvid {
       position: fixed;
       top: 50%;
@@ -241,42 +240,89 @@ body {
   }
 
   /*/////////DECOUVRIR\\\\\\\\\\*/
-  #decouvrir{
-    background: white;
+  #decouvrir {
+    height: 700px;
+    background-image: url('../img/Offre-ATMB.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    img {
+      height: 100px;
+      width: auto;
+      &#rouge {
+        position: relative;
+        -webkit-animation: redCar 10s infinite ease-in;
+        animation: redCar 10s infinite ease-in;
+      }
+      &#bleue {
+
+        position: relative;
+        -webkit-animation: blueCar 10s infinite ease-out;
+        animation: blueCar 10s infinite ease-out;
+      }
+    }
+
+    button {
+      margin-top: 350px;
+    }
   }
 
   /*/////////APP\\\\\\\\\\*/
-  #app{
+  #app {
     background: white;
   }
 
   /*/////////LEPROJET\\\\\\\\\\*/
-  #projet{
+  #projet {
     background: white;
   }
 
   /*/////////FOOTER\\\\\\\\\\*/
-  #footer{
+  #footer {
     background: white;
-    #partenaires{
+    #partenaires {
 
-      h3{
+      h3 {
         margin-top: 4rem;
         margin-bottom: 4rem;
       }
-      img{
+      img {
         max-width: 150px;
       }
     }
   }
 
   /*/////////PICTOS\\\\\\\\\\*/
-  #pictos{
+  #pictos {
     background: white;
     padding: 10rem 0 10rem 0;
 
-    img{
+    img {
       width: 50%;
+
+      @media screen and (max-width: 991px) {
+        margin-top: 10rem;
+        width: 20%
+      }
     }
   }
+}
+
+@keyframes blueCar {
+  0%   {left: -200px;}
+  100%   {left: 2000px;}
+}
+@-webkit-keyframes blueCar {
+  0%   {left: -200px;}
+  100%   {left: 2000px;}
+}
+
+@keyframes redCar {
+  0%   {right: -100px;}
+  100%   {right: 2000px;}
+}
+@-webkit-keyframes redCar {
+  0%   {right: -100px;}
+  100%   {right: 2000px;}
 }

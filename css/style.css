@@ -127,7 +127,7 @@ body {
       width: 100%;
       outline: none;
       height: 40px;
-      border-bottom: solid 5 px black;
+      border-bottom: solid 5px black;
       font-family: "bebas" !important;
       -webkit-box-shadow: none;
       box-shadow: none;
@@ -166,7 +166,24 @@ body {
     padding-top: 25rem;
     min-width: 300px; }
   body #decouvrir {
-    background: white; }
+    height: 700px;
+    background-image: url("../img/Offre-ATMB.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    body #decouvrir img {
+      height: 100px;
+      width: auto; }
+      body #decouvrir img#rouge {
+        position: relative;
+        -webkit-animation: redCar 10s infinite ease-in;
+        animation: redCar 10s infinite ease-in; }
+      body #decouvrir img#bleue {
+        position: relative;
+        -webkit-animation: blueCar 10s infinite ease-out;
+        animation: blueCar 10s infinite ease-out; }
+    body #decouvrir button {
+      margin-top: 350px; }
   body #app {
     background: white; }
   body #projet {
@@ -183,5 +200,30 @@ body {
     padding: 10rem 0 10rem 0; }
     body #pictos img {
       width: 50%; }
+      @media screen and (max-width: 991px) {
+        body #pictos img {
+          margin-top: 10rem;
+          width: 20%; } }
+
+@keyframes blueCar {
+  0% {
+    left: -200px; }
+  100% {
+    left: 2000px; } }
+@-webkit-keyframes blueCar {
+  0% {
+    left: -200px; }
+  100% {
+    left: 2000px; } }
+@keyframes redCar {
+  0% {
+    right: -100px; }
+  100% {
+    right: 2000px; } }
+@-webkit-keyframes redCar {
+  0% {
+    right: -100px; }
+  100% {
+    right: 2000px; } }
 
 /*# sourceMappingURL=style.css.map */
