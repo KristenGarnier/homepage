@@ -1,3 +1,5 @@
+var url = "http://ajava.pythonanywhere.com/";
+
 function reloadcommentsprofil(tripid) {
 
     $.ajax({
@@ -142,14 +144,14 @@ function search_trip() {
     arrival = document.getElementById('arrival').value
     date = document.getElementById('date').value
     $.ajax({
-        url : "/searchtrip", // the endpoint
+        url : url+"/searchtrip", // the endpoint
         type : "POST", // http method
         data : { departur: departur, arrival: arrival, date: date, page:0 }, // data sent with the post request
         success : function(json) {
             document.getElementById('resultcontent').innerHTML = json
         },
         error : function(xhr,errmsg,err) {
-            alert(err);
+            alert(err, errmsg);
         }
     });
 }

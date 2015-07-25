@@ -139,9 +139,16 @@ body {
     background: url("../img/TRAJETS.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
-    body #researchBigPicture img {
+    body #researchBigPicture img:not(.modal-body img) {
       padding-top: 20rem;
       min-width: 300px; }
+    body #researchBigPicture .trajet {
+      padding: 1rem; }
+      body #researchBigPicture .trajet div {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background: white !important; }
   body #research {
     background: white;
     font-family: BebasNeue;
@@ -293,6 +300,9 @@ body {
               margin-left: 3rem; }
               body #footer #links .test div i#youtube:hover {
                 color: #e52d27; }
+            @media screen and (max-width: 991px) {
+              body #footer #links .test div i {
+                font-size: 5rem; } }
       body #footer #links a {
         font-family: BebasNeue;
         font-size: 1.5em;
@@ -310,7 +320,7 @@ body {
         max-height: 75px; }
         @media screen and (max-height: 991px) {
           body #footer #partenaires img {
-            margin-top: 4rem; } }
+            margin-top: 8rem; } }
   body #pictos {
     background: white;
     padding: 10rem 0 10rem 0; }

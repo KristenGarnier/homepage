@@ -5,6 +5,7 @@
     <title>Covoiturage Mt Blanc Valley</title>
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/gritStyle.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/buttons.css"/>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
@@ -54,27 +55,30 @@
             <form>
                 <div class="row">
                     <div class="form-group col-md-4">
-                        <select id="depart" class="form-control">
+                        <select id="departur" onchange="search_trip()" class="form-control">
                             <option>Départ</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+
+                            <option>Lyon</option>
+
+                            <option>Sallanches</option>
+
+                            <option>Megeve</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <select id="finish" class="form-control">
-                            <option>Destination</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select id="arrival" onchange="search_trip()" class="form-control">
+                            <option>Arrivée</option>
+
+                            <option>Lyon</option>
+
+                            <option>Sallanches</option>
+
+                            <option>Megeve</option>
+
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <select id="date" class="form-control">
+                        <select id="date" onchange="search_trip()" class="form-control">
                             <option>Date</option>
                             <option>1</option>
                             <option>2</option>
@@ -88,7 +92,405 @@
         </div>
     </div>
     <div id="researchBigPicture" class="fillScreen">
-        <img src="img/Filtre.png" class="center-block" alt="REcherche ajava"
+        <div class="resultcontent container" class="row">
+
+            <div class="modal fade" id="4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">×</span></button>
+                            <h4 class="modal-title" id="myModalLabel">
+
+                                Clement
+            <span class="lgnbr">
+                Connectez vous afin de voir les numéros, commenter et proposer des trajets
+            </span>
+
+
+                            </h4>
+
+
+                        </div>
+                        <div class="modal-body" style="min-height:150px;">
+        <span class="row">
+            <span class="moinfo">
+                <span style="margin-top:-26px;">
+
+
+                        <img style="border-radius:59%; width:100px; height:100px; margin-top:-26px;"
+                             src="https://graph.facebook.com/v2.2/10207233475893839/picture?type=square&amp;height=600&amp;width=600&amp;return_ssl_resources=1"
+                             onerror="this.src='/static/mbv/pictures/nopic.png';">
+
+
+            </span>
+            <span class="col-xs-8" style="margin-top:-40px;">
+                <span class="row ">
+                    <span class="col-xs-8">
+                        <h3>
+                            Lyon
+
+                            <br>
+                            Megeve
+                        </h3>
+    				<h4>
+                        0 H 1
+                        <br>
+                        le 23 / 7 / 2015
+                    </h4>
+
+                    </span>
+                    <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+    			    <br>
+    			    <br>
+    			    <h3>
+                        5
+                    </h3>
+    				<span class="glyphicon glyphicon-euro"></span>
+
+    			</span>
+    			<span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+    			    <br>
+    			    <br>
+    			    <h3>
+                        3
+                    </h3>
+    			    <span class="glyphicon glyphicon-user"></span>
+
+    			</span>
+
+
+                </span>
+                </span>
+
+            </span>
+            <br>
+            <span class="row">
+                <span class="glyphicon glyphicon-comment"
+                      style="position:absolute; left: 25px; top:155px; font-size:200%;"></span>
+                    <span id="innercomments43" class="col-md-12 row  modcomments"
+                          style="margin-top:40px margin-bottom:50px;">
+                        <span class="comment col-md-12">
+                    <br>
+					<b>
+                        Clement :
+                    </b>
+					<p class="contentcomment">
+
+                        Hello
+
+
+
+                    </p>
+				</span>
+                        <span class="comment col-md-12">
+                    <br>
+					<b>
+                        Clement :
+                    </b>
+					<p class="contentcomment">
+
+                        Hello
+
+
+
+                    </p>
+				</span>
+                        <span class="comment col-md-12">
+                    <br>
+					<b>
+                        Clement :
+                    </b>
+					<p class="contentcomment">
+
+                        Hello
+
+
+
+                    </p>
+				</span>
+                        <span class="comment col-md-12">
+                    <br>
+					<b>
+                        Clement :
+                    </b>
+					<p class="contentcomment">
+
+                        Hello
+
+
+
+                    </p>
+				</span>
+				</span>
+
+		</span>
+
+                </span>
+        </span>
+                        </div>
+                        <div class="modal-footer modinput">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <span class="col-md-6 trajet">
+                 <div>
+                <a data-toggle="modal" data-target="#4" class="cclink">
+                    <span class="row">
+                        <span class="col-xs-8">
+                            <h3>
+                                Sallanches
+                                - Lyon
+                            </h3>
+                            Patrick
+                            <br>
+                            <h4>
+                                23 H 30
+                                <br>
+                                le 12 / 6 / 2015
+                            </h4>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                3
+                            </h3>
+                            <span class="glyphicon glyphicon-euro"></span>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                2
+                            </h3>
+                            <span class="glyphicon glyphicon-user"></span>
+
+                        </span>
+                    </span>
+                </a>
+                     </div>
+            </span>
+             <span class="col-md-6 trajet">
+                 <div>
+                     <a data-toggle="modal" data-target="#4" class="cclink">
+                    <span class="row">
+                        <span class="col-xs-8">
+                            <h3>
+                                Sallanches
+                                - Lyon
+                            </h3>
+                            Patrick
+                            <br>
+                            <h4>
+                                23 H 30
+                                <br>
+                                le 12 / 6 / 2015
+                            </h4>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                3
+                            </h3>
+                            <span class="glyphicon glyphicon-euro"></span>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                2
+                            </h3>
+                            <span class="glyphicon glyphicon-user"></span>
+
+                        </span>
+                    </span>
+                     </a>
+                 </div>
+            </span>
+            <span class="col-md-6 trajet">
+                 <div>
+                     <a data-toggle="modal" data-target="#4" class="cclink">
+                    <span class="row">
+                        <span class="col-xs-8">
+                            <h3>
+                                Sallanches
+                                - Lyon
+                            </h3>
+                            Patrick
+                            <br>
+                            <h4>
+                                23 H 30
+                                <br>
+                                le 12 / 6 / 2015
+                            </h4>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                3
+                            </h3>
+                            <span class="glyphicon glyphicon-euro"></span>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                2
+                            </h3>
+                            <span class="glyphicon glyphicon-user"></span>
+
+                        </span>
+                    </span>
+                     </a>
+                 </div>
+            </span>
+            <span class="col-md-6 trajet">
+                 <div>
+                     <a data-toggle="modal" data-target="#4" class="cclink">
+                    <span class="row">
+                        <span class="col-xs-8">
+                            <h3>
+                                Sallanches
+                                - Lyon
+                            </h3>
+                            Patrick
+                            <br>
+                            <h4>
+                                23 H 30
+                                <br>
+                                le 12 / 6 / 2015
+                            </h4>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                3
+                            </h3>
+                            <span class="glyphicon glyphicon-euro"></span>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                2
+                            </h3>
+                            <span class="glyphicon glyphicon-user"></span>
+
+                        </span>
+                    </span>
+                     </a>
+                 </div>
+            </span>
+            <span class="col-md-6 trajet">
+                 <div>
+                     <a data-toggle="modal" data-target="#4" class="cclink">
+                    <span class="row">
+                        <span class="col-xs-8">
+                            <h3>
+                                Sallanches
+                                - Lyon
+                            </h3>
+                            Patrick
+                            <br>
+                            <h4>
+                                23 H 30
+                                <br>
+                                le 12 / 6 / 2015
+                            </h4>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                3
+                            </h3>
+                            <span class="glyphicon glyphicon-euro"></span>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                2
+                            </h3>
+                            <span class="glyphicon glyphicon-user"></span>
+
+                        </span>
+                    </span>
+                     </a>
+                 </div>
+            </span>
+            <span class="col-md-6 trajet">
+                 <div>
+                     <a data-toggle="modal" data-target="#4" class="cclink">
+                    <span class="row">
+                        <span class="col-xs-8">
+                            <h3>
+                                Sallanches
+                                - Lyon
+                            </h3>
+                            Patrick
+                            <br>
+                            <h4>
+                                23 H 30
+                                <br>
+                                le 12 / 6 / 2015
+                            </h4>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                3
+                            </h3>
+                            <span class="glyphicon glyphicon-euro"></span>
+
+                        </span>
+                        <span class="col-xs-2" style="border-left: solid 1px; heigth:100%;">
+                            <br>
+                            <br>
+                            <h3>
+                                2
+                            </h3>
+                            <span class="glyphicon glyphicon-user"></span>
+
+                        </span>
+                    </span>
+                     </a>
+                 </div>
+            </span>
+
+
+            <a onclick="page_search_trip(1)" class="cclink  commbtn">
+                <span class="glyphicon glyphicon-arrow-left combtn btnleft"></span>
+            </a>
+
+
+            <a onclick="page_search_trip(2)" class="cclink commbtn">
+                <span class="glyphicon glyphicon-arrow-right combtn btnright"></span>
+            </a>
+
+
+        </div>
+
+        <img src="img/Filtre.png" class="center-block" alt="Recherche ajava"
              data-parallax='{"y": 70, "from-scroll": 550}'/>
     </div>
     <div id="resume">
@@ -222,8 +624,8 @@
                     <div class="row test">
                         <div class="col-xs-12">
                             <div class="text-center">
-                                <a href=""><i  id="youtube" class="fa fa-youtube"></i></a>
-                                <a href="" ><i id="facebook" class="fa fa-facebook"></i></a>
+                                <a href=""><i id="youtube" class="fa fa-youtube"></i></a>
+                                <a href=""><i id="facebook" class="fa fa-facebook"></i></a>
                             </div>
                         </div>
                     </div>
@@ -235,22 +637,22 @@
                 <h3>Nos partenaires</h3>
 
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-xs-6">
                         <a href="">
                             <img class="center-block" src="img/atmb.png" alt="logo atmb"/>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-xs-6">
                         <a href="">
                             <img class="center-block" src="img/logo3.png" alt="Logo radio mont blanc"/>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-xs-6">
                         <a href="">
                             <img class="center-block" src="img/photographe.png" alt="logo photographe"/>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-xs-6">
                         <a href="">
                             <img class="center-block" src="img/out.png" alt="logo out door sport valley"/>
                         </a>
@@ -295,16 +697,16 @@
             $bleue.css("transform", "translate3d(0px, " + (heightBlue) + "px, 0px)");
         }
 
-        function placeOffer(width){
+        function placeOffer(width) {
 
             var $offre = $('#offre');
 
             var widthOffre = $offre.width();
 
-            var result = (width/2)-(widthOffre/2);
+            var result = (width / 2) - (widthOffre / 2);
 
 
-            $offre.css("transform", "translate("+ result +"px, 30% )");
+            $offre.css("transform", "translate(" + result + "px, 30% )");
         }
     }());
 

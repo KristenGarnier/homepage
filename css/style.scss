@@ -197,10 +197,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    img {
+    img:not(.modal-body img) {
       padding-top: 20rem;
       min-width: 300px;
     }
+
+    .trajet {
+      padding: 1rem;
+      div {
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        background: white !important ;
+        a{
+          span{
+
+
+          }
+        }
+      }
+    }
+
   }
 
   /*////////////REASEARCH \\\\\\\\\\\\\\\\*/
@@ -435,6 +452,9 @@ body {
               }
             }
             font-size: 3rem;
+            @media screen and (max-width: 991px) {
+              font-size: 5rem;
+            }
           }
 
         }
@@ -465,7 +485,7 @@ body {
       img {
         max-height: 75px;
         @media screen and (max-height: 991px) {
-          margin-top: 4rem;
+          margin-top: 8rem;
         }
       }
     }
