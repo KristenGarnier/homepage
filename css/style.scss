@@ -179,7 +179,7 @@ body {
   /*/////////////HOME \\\\\\\\\\\\\\\*/
 
   #home {
-    background: url("../img/cd-background-1.jpg");
+    background: url("../img/cd-background-1.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -209,7 +209,7 @@ body {
     background: white;
     font-family: BebasNeue;
 
-    padding: 4rem 0 6rem 0;
+    padding: 10rem 0 12rem 0;
 
     h1 {
       span {
@@ -222,12 +222,11 @@ body {
 
     select.form-control {
       color: black;
-      margin-top: 30px;
+      margin-top: 6rem;
       width: 100%;
       outline: none;
-      height: 40px;
       border-bottom: solid 5px black;
-      font-family: "bebas" !important;
+      font-family: BebasNeue !important;
       -webkit-box-shadow: none;
       box-shadow: none;
       background: transparent;
@@ -236,9 +235,11 @@ body {
       line-height: 1;
       border: 0;
       border-radius: 0;
-      height: 34px;
       -webkit-appearance: none;
+      height:40px;
       border-bottom: solid 5px;
+
+
     }
   }
 
@@ -279,6 +280,14 @@ body {
       padding-top: 25rem;
       min-width: 300px;
     }
+
+    button{
+      margin-top : 8rem;
+      padding: 1rem 3rem;
+      &:hover {
+        color: #525252 !important;
+      }
+    }
   }
 
   /*/////////DECOUVRIR\\\\\\\\\\*/
@@ -302,6 +311,12 @@ body {
         position: relative;
         -webkit-animation: blueCar 10s infinite ease-out;
         animation: blueCar 10s infinite ease-out;
+      }
+
+      &#offre{
+        position: absolute;
+        height: 300px;
+
       }
     }
 
@@ -392,6 +407,40 @@ body {
         width: 70%;
       }
 
+      .test{
+        width: 70%;
+
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+        div{
+
+          margin-top: 2rem;
+
+          i{
+            &#facebook{
+              transition: color 0.2s ease-in;
+              &:hover{
+                color: #3b5998;
+              }
+            }
+
+            &#youtube{
+              transition: color 0.2s ease-in;
+              margin-right: 3rem;
+              margin-left: 3rem;
+
+              &:hover{
+                color: #e52d27;
+              }
+            }
+            font-size: 3rem;
+          }
+
+        }
+
+      }
+
       a {
         font-family: BebasNeue;
         font-size: 1.5em;
@@ -407,14 +456,14 @@ body {
     }
     #partenaires {
 
-      padding-bottom: 10rem;
+      padding-bottom: 4rem;
 
       h3 {
         margin-top: 4rem;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
       }
       img {
-        max-height: 50px;
+        max-height: 75px;
         @media screen and (max-height: 991px) {
           margin-top: 4rem;
         }

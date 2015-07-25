@@ -128,7 +128,7 @@ body {
               color: white;
               background-color: #285f8f; }
   body #home {
-    background: url("../img/cd-background-1.jpg");
+    background: url("../img/cd-background-1.jpg") center;
     background-repeat: no-repeat;
     background-size: cover; }
     body #home img {
@@ -145,7 +145,7 @@ body {
   body #research {
     background: white;
     font-family: BebasNeue;
-    padding: 4rem 0 6rem 0; }
+    padding: 10rem 0 12rem 0; }
     body #research h1 {
       padding-bottom: 4rem; }
       body #research h1 span {
@@ -154,12 +154,11 @@ body {
         border: solid black 4px; }
     body #research select.form-control {
       color: black;
-      margin-top: 30px;
+      margin-top: 6rem;
       width: 100%;
       outline: none;
-      height: 40px;
       border-bottom: solid 5px black;
-      font-family: "bebas" !important;
+      font-family: BebasNeue !important;
       -webkit-box-shadow: none;
       box-shadow: none;
       background: transparent;
@@ -168,8 +167,8 @@ body {
       line-height: 1;
       border: 0;
       border-radius: 0;
-      height: 34px;
       -webkit-appearance: none;
+      height: 40px;
       border-bottom: solid 5px; }
   body #resume {
     background: white;
@@ -196,6 +195,11 @@ body {
     min-width: 300px;
     padding-top: 25rem;
     min-width: 300px; }
+  body #video button {
+    margin-top: 8rem;
+    padding: 1rem 3rem; }
+    body #video button:hover {
+      color: #525252 !important; }
   body #decouvrir {
     height: 700px;
     background-image: url("../img/Offre-ATMB.png");
@@ -213,6 +217,9 @@ body {
         position: relative;
         -webkit-animation: blueCar 10s infinite ease-out;
         animation: blueCar 10s infinite ease-out; }
+      body #decouvrir img#offre {
+        position: absolute;
+        height: 300px; }
     body #decouvrir button {
       margin-top: 350px;
       padding: 1rem 3rem; }
@@ -267,6 +274,25 @@ body {
       body #footer #links p {
         color: #999999;
         width: 70%; }
+      body #footer #links .test {
+        width: 70%; }
+        @media screen and (max-width: 991px) {
+          body #footer #links .test {
+            width: 100%; } }
+        body #footer #links .test div {
+          margin-top: 2rem; }
+          body #footer #links .test div i {
+            font-size: 3rem; }
+            body #footer #links .test div i#facebook {
+              transition: color 0.2s ease-in; }
+              body #footer #links .test div i#facebook:hover {
+                color: #3b5998; }
+            body #footer #links .test div i#youtube {
+              transition: color 0.2s ease-in;
+              margin-right: 3rem;
+              margin-left: 3rem; }
+              body #footer #links .test div i#youtube:hover {
+                color: #e52d27; }
       body #footer #links a {
         font-family: BebasNeue;
         font-size: 1.5em;
@@ -276,12 +302,12 @@ body {
           text-decoration: none;
           color: #666666; }
     body #footer #partenaires {
-      padding-bottom: 10rem; }
+      padding-bottom: 4rem; }
       body #footer #partenaires h3 {
         margin-top: 4rem;
-        margin-bottom: 4rem; }
+        margin-bottom: 2rem; }
       body #footer #partenaires img {
-        max-height: 50px; }
+        max-height: 75px; }
         @media screen and (max-height: 991px) {
           body #footer #partenaires img {
             margin-top: 4rem; } }
