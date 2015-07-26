@@ -171,7 +171,7 @@
                       style="position:absolute; left: 25px; top:155px; font-size:200%;"></span>
                     <span id="innercomments43" class="col-md-12 row  modcomments"
                           style="margin-top:40px margin-bottom:50px;">
-                        <span class="comment col-md-12">
+                        <span class="comment col-xs-12">
                     <br>
 					<b>
                         Clement :
@@ -179,12 +179,11 @@
 					<p class="contentcomment">
 
                         Hello
-
 
 
                     </p>
 				</span>
-                        <span class="comment col-md-12">
+                        <span class="comment col-xs-12">
                     <br>
 					<b>
                         Clement :
@@ -192,12 +191,11 @@
 					<p class="contentcomment">
 
                         Hello
-
 
 
                     </p>
 				</span>
-                        <span class="comment col-md-12">
+                        <span class="comment col-xs-12">
                     <br>
 					<b>
                         Clement :
@@ -205,12 +203,11 @@
 					<p class="contentcomment">
 
                         Hello
-
 
 
                     </p>
 				</span>
-                        <span class="comment col-md-12">
+                        <span class="comment col-xs-12">
                     <br>
 					<b>
                         Clement :
@@ -218,7 +215,6 @@
 					<p class="contentcomment">
 
                         Hello
-
 
 
                     </p>
@@ -228,7 +224,7 @@
 		</span>
 
                 </span>
-        </span>
+                            </span>
                         </div>
                         <div class="modal-footer modinput">
                         </div>
@@ -238,7 +234,7 @@
 
              <span class="col-md-6 trajet">
                  <div>
-                <a data-toggle="modal" data-target="#4" class="cclink">
+                     <a data-toggle="modal" data-target="#4" class="cclink">
                     <span class="row">
                         <span class="col-xs-8">
                             <h3>
@@ -273,8 +269,8 @@
 
                         </span>
                     </span>
-                </a>
-                     </div>
+                     </a>
+                 </div>
             </span>
              <span class="col-md-6 trajet">
                  <div>
@@ -477,20 +473,21 @@
                  </div>
             </span>
 
+            <div class="col-xs-12">
+                <a onclick="page_search_trip(1)" class="cclink  commbtn pull-left">
+                    <span class="glyphicon glyphicon-arrow-left combtn"></span>
+                </a>
 
-            <a onclick="page_search_trip(1)" class="cclink  commbtn">
-                <span class="glyphicon glyphicon-arrow-left combtn btnleft"></span>
-            </a>
 
-
-            <a onclick="page_search_trip(2)" class="cclink commbtn">
-                <span class="glyphicon glyphicon-arrow-right combtn btnright"></span>
-            </a>
+                <a onclick="page_search_trip(2)" class="cclink commbtn pull-right">
+                    <span class="glyphicon glyphicon-arrow-right combtn"></span>
+                </a>
+            </div>
 
 
         </div>
 
-        <img src="img/Filtre.png" class="center-block" alt="Recherche ajava"
+        <img src="img/Filtre.png" class="center-block imageSearch" alt="Recherche ajava"
              data-parallax='{"y": 70, "from-scroll": 550}'/>
     </div>
     <div id="resume">
@@ -528,7 +525,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img class="center-block" src="img/earth.png" alt=""/>
+                    <img class="center-block" src="img/conversation.png" alt=""/>
 
                     <h3 class="text-center text-uppercase">Partager</h3>
                 </div>
@@ -538,12 +535,12 @@
                     <h3 class="text-center text-uppercase">Proteger</h3>
                 </div>
                 <div class="col-md-3">
-                    <img class="center-block" src="img/earth.png" alt=""/>
+                    <img class="center-block" src="img/economy.png" alt=""/>
 
                     <h3 class="text-center text-uppercase">Economiser</h3>
                 </div>
                 <div class="col-md-3">
-                    <img class="center-block" src="img/earth.png" alt=""/>
+                    <img class="center-block" src="img/temp.png" alt=""/>
 
                     <h3 class="text-center text-uppercase">gagner</h3>
                 </div>
@@ -724,6 +721,15 @@
             }
         });
     });
+
+    (function(){
+        $('.resultcontent').toggleClass('hidden');
+      $('select').on('click', function () {
+          console.log('test');
+          $('.resultcontent').toggleClass('hidden');
+          $('.imageSearch').addClass('hidden');
+      })
+    }())
 
 </script>
 </body>

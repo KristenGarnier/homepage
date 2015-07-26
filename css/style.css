@@ -139,16 +139,19 @@ body {
     background: url("../img/TRAJETS.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
-    body #researchBigPicture img:not(.modal-body img) {
+    body #researchBigPicture img.imageSearch {
       padding-top: 20rem;
       min-width: 300px; }
+    body #researchBigPicture .resultcontent {
+      padding-top: 5rem; }
     body #researchBigPicture .trajet {
       padding: 1rem; }
       body #researchBigPicture .trajet div {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
-        background: white !important; }
+        background: white !important;
+        border: 3px solid black; }
   body #research {
     background: white;
     font-family: BebasNeue;

@@ -197,9 +197,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    img:not(.modal-body img) {
+    img.imageSearch {
       padding-top: 20rem;
       min-width: 300px;
+    }
+
+    .resultcontent{
+      padding-top: 5rem;
     }
 
     .trajet {
@@ -209,12 +213,7 @@ body {
         -moz-box-sizing:border-box;
         -webkit-box-sizing:border-box;
         background: white !important ;
-        a{
-          span{
-
-
-          }
-        }
+        border: 3px solid black;
       }
     }
 
