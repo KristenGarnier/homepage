@@ -7,6 +7,15 @@
   font-family: "SignPainter";
   src: url("../font/SignPainter.otf") format("opentype");
   src: local("SignPainter"); }
+.fancyButtonBlack {
+  font-family: BebasNeue;
+  font-size: 2em;
+  color: black !important;
+  border: black 4px solid !important;
+  transition: color ease-in-out 0.2s; }
+  .fancyButtonBlack::before {
+    background: black !important; }
+
 .fancyButton {
   font-family: BebasNeue;
   font-size: 2em;
@@ -187,6 +196,11 @@ body {
       margin-left: 5rem; }
     body #resume .strong {
       font-weight: 700; }
+    body #resume button {
+      margin-top: 8rem;
+      padding: 1rem 3rem; }
+      body #resume button:hover {
+        color: white !important; }
   body #video video#bgvid {
     position: fixed;
     top: 50%;
