@@ -34,6 +34,9 @@
 @media screen and (max-width: 551px) {
   .margin-left-xs {
     margin-left: 10rem; } }
+@media screen and (max-width: 450px) {
+  .margin-left-xs {
+    margin-left: 5rem; } }
 
 .noUnderline:hover {
   text-decoration: none; }
@@ -53,7 +56,8 @@ body {
   /*/////////APP\\\\\*/
   /*/////////LEPROJET\\\\\*/
   /*/////////FOOTER\\\\\*/
-  /*/////////PICTOS\\\\\*/ }
+  /*/////////PICTOS\\\\\*/
+  /*/////////MODAL\\\\\*/ }
   body .page {
     overflow: hidden; }
   body header {
@@ -143,14 +147,17 @@ body {
     body #home img {
       padding-top: 20rem;
       width: 18%;
-      min-width: 300px; }
+      min-width: 200px; }
   body #researchBigPicture {
     background: url("../img/TRAJETS.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
     body #researchBigPicture img.imageSearch {
       padding-top: 20rem;
-      min-width: 300px; }
+      min-width: 100px; }
+      @media screen and (max-width: 991px) {
+        body #researchBigPicture img.imageSearch {
+          max-width: 200px; } }
     body #researchBigPicture .resultcontent {
       padding-top: 5rem; }
     body #researchBigPicture .trajet {
@@ -160,7 +167,10 @@ body {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         background: white !important;
-        border: 3px solid black; }
+        border: 3px solid black;
+        transition: all ease-in-out 0.3s; }
+        body #researchBigPicture .trajet div:hover {
+          background-color: rgba(255, 255, 255, 0.7) !important; }
   body #research {
     background: white;
     font-family: BebasNeue;
@@ -212,13 +222,15 @@ body {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
+    background: url("../img/videoImg.png") no-repeat;
     background-size: cover; }
   body #video img {
     width: 30%;
     min-width: 300px;
-    padding-top: 25rem;
-    min-width: 300px; }
+    padding-top: 25rem; }
+    @media screen and (max-width: 991px) {
+      body #video img {
+        padding-top: 15rem; } }
   body #video button {
     margin-top: 8rem;
     padding: 1rem 3rem; }
@@ -244,6 +256,9 @@ body {
       body #decouvrir img#offre {
         position: absolute;
         height: 300px; }
+        @media screen and (max-width: 991px) {
+          body #decouvrir img#offre {
+            height: 200px; } }
     body #decouvrir button {
       margin-top: 350px;
       padding: 1rem 3rem; }
@@ -347,6 +362,28 @@ body {
         body #pictos img {
           margin-top: 10rem;
           width: 20%; } }
+  body .modal .modal-header {
+    border-bottom: solid 0px !important; }
+  body .modal .modal-footer {
+    border-top: solid 0px !important; }
+  body .modal .modal-content {
+    border: solid 5px !important;
+    font-family: BebasNeue; }
+    body .modal .modal-content .big-icon {
+      margin-top: 4rem;
+      font-size: 2em; }
+    body .modal .modal-content .commentaires {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      height: 300px;
+      overflow: scroll;
+      overflow-x: hidden; }
+      body .modal .modal-content .commentaires h6 {
+        font-weight: 700; }
+      body .modal .modal-content .commentaires div.commentaire {
+        border-bottom: black solid 3px; }
+      @media screen and (max-width: 991px) {
+        body .modal .modal-content .commentaires {
+          height: 200px; } }
 
 @keyframes blueCar {
   0% {
@@ -368,5 +405,18 @@ body {
     right: -100px; }
   100% {
     right: 2000px; } }
+.cclink {
+  color: black !important; }
+
+.cclink:hover {
+  text-decoration: none;
+  color: grey; }
+
+.combtn {
+  color: white !important;
+  font-size: 50px; }
+
+.combtn:hover {
+  color: gray !important; }
 
 /*# sourceMappingURL=style.css.map */

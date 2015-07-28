@@ -32,21 +32,21 @@ $(document).ready(function () {
         return height;
     }
 
-    function voyagesSet(height) {
+});
 
-        console.log(height, $('.resultcontent').height());
+function voyagesSet(height) {
 
-        if(height < $('.resultcontent').height()){
+    console.log(height, $('.resultcontent').height());
 
-            console.log('in');
-            $('#researchBigPicture').height( $('.resultcontent').height() + 200);
+    if(height < $('.resultcontent').height()){
 
-            return false;
-        }else {
-            $('#researchBigPicture').height( height);
-        }
+        console.log('in');
+        $('#researchBigPicture').height( $('.resultcontent').height() + 200);
 
-        return true;
+        return false;
+    }else {
+        $('#researchBigPicture').height( height);
     }
 
-});
+    return true;
+}

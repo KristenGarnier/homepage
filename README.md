@@ -2,4 +2,4 @@
 
 ##ATTENTION
 
-J'ai chané le html pour le faire en sorte que la boite modale et l'affichage des trajets soient mieux résponsive
+J'ai changé le html pour le faire en sorte q‡ue la boite modale et l'affichage des trajets soient mieux résponsive

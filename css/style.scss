@@ -53,6 +53,9 @@ $blue: #337ab7;
   @media screen and (max-width: 551px){
     margin-left: 10rem;
   }
+  @media screen and (max-width: 450px){
+    margin-left: 5rem;
+  }
 }
 
 .noUnderline:hover {
@@ -202,7 +205,7 @@ body {
     img {
       padding-top: 20rem;
       width: 18%;
-      min-width: 300px;
+      min-width: 200px;
     }
   }
 
@@ -215,7 +218,10 @@ body {
 
     img.imageSearch {
       padding-top: 20rem;
-      min-width: 300px;
+      min-width: 100px;
+      @media screen and (max-width: 991px) {
+        max-width: 200px;
+      }
     }
 
     .resultcontent{
@@ -230,6 +236,11 @@ body {
         -webkit-box-sizing:border-box;
         background: white !important ;
         border: 3px solid black;
+        transition : all ease-in-out 0.3s;
+
+        &:hover{
+          background-color: rgba(255,255,255, 0.7) !important;
+        }
       }
     }
 
@@ -310,7 +321,7 @@ body {
       z-index: -100;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
-      background: url(polina.jpg) no-repeat;
+      background: url("../img/videoImg.png") no-repeat;
       background-size: cover;
     }
 
@@ -318,7 +329,11 @@ body {
       width: 30%;
       min-width: 300px;
       padding-top: 25rem;
-      min-width: 300px;
+
+      @media screen and (max-width: 991px ){
+        padding-top: 15rem;
+      }
+
     }
 
     button{
@@ -356,6 +371,10 @@ body {
       &#offre{
         position: absolute;
         height: 300px;
+
+        @media screen and (max-width: 991px){
+          height: 200px;
+        }
 
       }
     }
@@ -528,6 +547,44 @@ body {
       }
     }
   }
+
+  /*/////////MODAL\\\\\\\\\*/
+  .modal{
+    .modal-header{
+      border-bottom: solid 0px !important;
+    }
+
+    .modal-footer{
+      border-top: solid 0px !important;
+    }
+
+    .modal-content{
+      border: solid 5px !important;
+      font-family: BebasNeue;
+
+      .big-icon{
+        margin-top: 4rem;
+        font-size: 2em;
+      }
+      .commentaires{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        height: 300px;
+        overflow: scroll;
+        overflow-x: hidden;
+
+        h6{
+          font-weight: 700;
+        }
+        div.commentaire{
+          border-bottom: black solid 3px;
+        }
+        @media screen and (max-width: 991px){
+          height: 200px;
+        }
+      }
+
+    }
+  }
 }
 
 @keyframes blueCar {
@@ -564,4 +621,22 @@ body {
   100% {
     right: 2000px;
   }
+}
+
+.cclink {
+  color: black !important;
+}
+
+.cclink:hover {
+  text-decoration: none;
+  color:grey;
+}
+
+.combtn {
+  color: white !important;
+  font-size:50px;
+}
+
+.combtn:hover {
+  color: gray !important;
 }
